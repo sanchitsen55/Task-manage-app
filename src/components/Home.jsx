@@ -57,13 +57,13 @@ const App = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="bg-white p-6 rounded-2xl shadow-md w-full max-w-lg">
+      <div className="bg-white p-6 rounded-2xl shadow-md w-full max-w-lg sm:max-w-md">
         <h1 className="text-2xl font-bold mb-4 flex items-center gap-2">
           📝 Task Manager
         </h1>
 
         {/* Add Task Input */}
-        <div className="flex gap-2 mb-4">
+        <div className="flex flex-col sm:flex-row gap-2 mb-4">
           <input
             type="text"
             value={title}
@@ -73,7 +73,7 @@ const App = () => {
           />
           <button
             onClick={addTask}
-            className="bg-blue-600 text-white px-4 rounded hover:bg-blue-700"
+            className="mt-2 sm:mt-0 bg-blue-600 text-white px-4 rounded hover:bg-blue-700 w-full sm:w-auto"
           >
             Add
           </button>
