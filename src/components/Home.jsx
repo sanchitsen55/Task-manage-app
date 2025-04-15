@@ -8,7 +8,7 @@ const App = () => {
   const [editingId, setEditingId] = useState(null);
   const [editedText, setEditedText] = useState("");
 
-  // Fetch tasks from backend
+  // Here data is Fetch tasks from backend
   useEffect(() => {
     axios.get("http://localhost:5000/tasks").then((res) => setTasks(res.data));
   }, []);
